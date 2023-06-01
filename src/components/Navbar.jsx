@@ -74,7 +74,7 @@ const NavBar = () => {
           <ul className="hidden md:flex md:gap-7" style={{ color: `#000` }}>
             <Link to="/">
               <li className="font-medium uppercase text-lg hover:text-[#a4a3de] transition-all duration-300">
-                About us
+                About
               </li>
             </Link>
             <Link to="/">
@@ -95,7 +95,7 @@ const NavBar = () => {
 
             <Link to="/contact">
               <li className="font-medium uppercase  text-lg hover:text-[#a4a3de] transition-all duration-300">
-                Contact Us
+                Contact
               </li>
             </Link>
           </ul>
