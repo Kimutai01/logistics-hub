@@ -84,7 +84,7 @@ const NavBar = () => {
             </Link>
             <Link to="/">
               <li className="font-medium uppercase  text-lg hover:text-[#a4a3de] transition-all duration-300">
-                Clients and membership
+                Clients
               </li>
             </Link>
             <Link to="/about">
@@ -104,14 +104,14 @@ const NavBar = () => {
             onClick={handleNav}
             style={{ color: `${linkColor}` }}
           >
-            <RiMenu5Line size={40} className="text-[#ff4d23]" />
+            <RiMenu5Line size={40} className="text-[#ff4d23] " />
           </div>
         </div>
         <div className="hidden md:flex">
           <div>
             <input
               type="text"
-              className="p-2 rounded-full w-70 outline-none border-none bg-gradient-to-r from-[#a4a3de] to-[#f3d0e2] bg-opacity-57"
+              className="p-2 rounded-full w-72  outline-none border-none bg-gradient-to-r from-[#a4a3de] to-[#f3d0e2] bg-opacity-57"
             />
           </div>
         </div>
