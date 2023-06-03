@@ -18,6 +18,11 @@
 }
 
 .home-about {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    white
+  ); /* Add the background gradient */
   background-image: url("/homesection.png");
   background-size: cover;
   background-position: center;
@@ -25,5 +30,19 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.feedback-about {
+  background: linear-gradient(to bottom, transparent, white),
+    url("/homesection.png");
+  background-size: cover;
+  background-position: center;
+
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }

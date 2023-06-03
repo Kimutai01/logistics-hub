@@ -1,6 +1,11 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import HomeSlider from "./HomeSlider";
+import SwiperCore, { Autoplay } from "swiper";
+
+// Initialize Swiper modules
+SwiperCore.use([Autoplay]);
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,7 +21,6 @@ const ItemsSlider = () => {
     { id: 2, text: "KAMPALA" },
     { id: 3, text: "BUSIA" },
     { id: 4, text: "MALABA" },
-    { id: 5, text: "ATHI RIVER" },
     { id: 6, text: "NAIROBI" },
     { id: 7, text: "MOMBASA" },
     { id: 8, text: "JINJA" },
@@ -31,19 +35,25 @@ const ItemsSlider = () => {
         spaceBetween={30}
         slidesPerGroup={1}
         loop={true}
-        className=" w-[100%] bg-gradient-to-r from-blue-900 to-pink-300 "
+        autoplay={{
+          delay: 100, // Adjust the delay (in milliseconds) between slides
+          disableOnInteraction: false, // Allow autoplay to continue even if the user interacts with the slider
+        }}
+        className="w-full h-full bg-gradient-to-r from-blue-900 to-pink-300"
       >
         {items.map((item) => (
-          <>
-            <SwiperSlide className="flex justify-center items-center">
-              <div key={item.id} className="flex justify-center items-center">
-                <div className="w-1 h-10 bg-gray-400"></div>
-                <h2 className="text-xl mx-10">{item.text}</h2>
-              </div>
-            </SwiperSlide>
-          </>
+          <SwiperSlide
+            key={item.id}
+            className="flex justify-center items-center"
+          >
+            <div className="flex justify-center items-center">
+              <div className="w-1 h-10 bg-gray-400"></div>
+              <h2 className="text-xl mx-10">{item.text}</h2>
+            </div>
+          </SwiperSlide>
         ))}
       </Swiper>
+      <HomeSlider />
     </div>
   );
 };
