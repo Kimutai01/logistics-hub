@@ -49,11 +49,17 @@ const Footer = () => {
             <a href="tel:0790342234">0790345343</a>
           </div>
         </div>
-        <hr className=" flex justify-center mt-10  my-3 mx-80" />
-        <div className="flex justify-between mx-40">
-          <div>Privacy policy</div>
-          <div>Privacy policy</div>
-          <div>Privacy policy</div>
+        <hr className=" flex justify-center mt-10  mx-96" />
+        <div className="flex   justify-center mx-52">
+          <div className="p-10 w-[300px] text-white hover:text-[#0116b9] text-center hover:bg-[#fff] ">
+            Privacy policy
+          </div>
+          <div className="p-10 w-[300px] text-white hover:text-[#0116b9] text-center hover:bg-[#fff]">
+            Copyright
+          </div>
+          <div className="p-10 w-[300px] text-white hover:text-[#0116b9] text-center hover:bg-[#fff]">
+            Cookie policy
+          </div>
         </div>
       </div>
     </div>
